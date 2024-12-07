@@ -9,13 +9,15 @@
     "start": "node ./src/app.js",
     "startBot": "npx node ./bot/index.js",
     "dev": "node ./clientBot2.js",
-    "all": "concurrently \"npm run dev\" \"npm run startBot\" \"npm start\" "
+    "all": "concurrently \"npm run dev\" \"npm run startBot\" \"npm start\" ",
+    "build": "rimraf dist && babel src --out-dir dist --copy-files"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.4.0",
+    "babel": "^5.8.38",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "chalk": "^5.3.0",
